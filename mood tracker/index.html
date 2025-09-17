@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mood Tracker</title>
+  <!-- Link CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <h2>Mood Tracker</h2>
+    <p>Select your mood for today:</p>
+    <div class="mood-buttons">
+      <button onclick="saveMood('😊','Happy')">😊 Happy</button>
+      <button onclick="saveMood('😢','Sad')">😢 Sad</button>
+      <button onclick="saveMood('😡','Angry')">😡 Angry</button>
+      <button onclick="saveMood('😐','Neutral')">😐 Neutral</button>
+    </div>
+    <h3>Mood History:</h3>
+    <div class="history" id="history"></div>
+  </div>
+
+  <!-- Load JS file (AFTER HTML content) -->
+  <script src="script.js"></script>
+</body>
+</html>
